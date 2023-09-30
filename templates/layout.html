@@ -7,8 +7,14 @@
     <title>My Blog</title>
 </head>
 <body>
+    <header> 
+        <nav>
+            <a href="{%url 'home'%}"> Головна  </a>
+        </nav>
+    </header>
     {% block content  %}
 
     {% endblock %}
+    
 </body>
 </html>
