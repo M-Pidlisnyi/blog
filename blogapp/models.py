@@ -12,5 +12,6 @@ class Post(models.Model):
     datetime = models.DateTimeField()
     category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default="no category")
 
+    #функція яка отримує url окремого поста
     def get_absolute_url(self):
         return reverse("post-details", args=[str(self.id)])
