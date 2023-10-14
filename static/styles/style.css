@@ -34,3 +34,34 @@ header .link{
     color:#aaa
 
 }
+
+.nav-li{
+    display: inline-block;
+    margin-left: 10%;
+}
+.nav-li:first-child{
+    margin-left: 0;
+}
+
+.content{
+    margin: 10px;
+    width: 75%;
+}
+
+.content h2{
+    margin-left: 10%;
+    font-size: 40px;
+}
+
+.post_text{
+    border-top: 5px double black;
+}
+
+.author{
+    color:#fff;
+    float: right;
+}
+
+.post_text p {
+    font-size: 18px;
+}
