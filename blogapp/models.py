@@ -11,6 +11,8 @@ class Post(models.Model):
     author = models.CharField(max_length=50)
     datetime = models.DateTimeField()
     category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default="no category")
+    image = models.ImageField(upload_to="images/", default=None, null=True)
+
 
     #функція яка отримує url окремого поста
     def get_absolute_url(self):
